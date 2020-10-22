@@ -141,6 +141,11 @@ footer{
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
 .gallery > img{
@@ -161,6 +166,7 @@ header{
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
   flex-direction: column;
 
 }
@@ -182,6 +188,8 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    flex-basis: 225px;
+
   }
 
   .card_big{
@@ -192,10 +200,14 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .nav_links{
     /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .nav_item a{
@@ -208,8 +220,32 @@ header{
     flex-basis: 200px;
   }
   /*Your code here again.*/
+  .pricing{
+    align-items: flex-start;
+    
+  }
+  .gallery{
+    display: none;
+  }
+
+  #gallery{
+    display: none;
+  }
+  body{
+    background: none;
+  }
+
   /*You will want four selectors*/  
 }
 
+@media screen and (prefers-reduced-motion){
+
+  #logo {
+    animation: none;
+  }
+
+
+
+}
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
